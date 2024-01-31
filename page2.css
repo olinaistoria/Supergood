@@ -1,0 +1,167 @@
+body {
+    background-color: rgb(64, 53, 75);
+    cursor: url('/icons/2.png') 4 1,
+    grab;
+}
+
+.black {
+    background-color: black;
+    box-shadow: 2px 8px 5px rgb(61, 52, 52);
+    border-radius: 3px;
+    transition: box-shadow 0.2s,
+    margin-bottom 0.2s,
+    margin-left 0.2s,
+    margin-right 0.2s;
+}
+.black:active{
+    box-shadow: none;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.wight {
+    background-color: aliceblue;
+    box-shadow: 8px 15px 2px rgb(32, 23, 23);
+    transition: box-shadow 0.2s,
+    margin-bottom 0.2s,
+    margin-left 0.2s,
+    margin-right 0.2s,
+    border-color 0.2s;
+    border-radius: 3px;
+    border: solid 2px;
+    border-color: rgb(107, 99, 99);
+
+}
+.wight:active{
+    box-shadow: none;
+    border-color: rgb(53, 42, 42);
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 250px 200px ;
+    grid-template-columns:
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px 
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px
+    20px 20px 20px 20px 20px 
+    20px 20px 20px 20px 20px ;
+}
+.sol-bemolm {
+    grid-area: 1 / 1 / 1 / 3;
+    z-index: 1;
+}
+.solm {
+    grid-area: 1 / 2 / -1 / 6;
+}
+.la-bemolm {
+    grid-area: 1 / 5 / 1 / 7;
+    z-index: 1;
+}
+.lam {
+    grid-area: 1 / 6 / -1 / 10;
+}
+.si-bemolm {
+    grid-area: 1 / 9 / 1 / 11;
+    z-index: 1;
+}
+.sim {
+    grid-area: 1 / 10 / -1 / 14;
+}
+.do1 {
+    grid-area: 1 / 14 / -1 / 18;
+}
+.re-bemol1{
+    z-index: 1;
+    grid-area: 1 / 17 / 1 / 19;
+}
+.re1 {
+    grid-area: 1 / 18 / -1 / 22;
+}
+.mi-bemol1{
+    z-index: 1;
+    grid-area: 1 / 21 / 1 / 23;
+}
+.mi1{
+    grid-area: 1 / 22 / -1 / 26;
+}
+.fa1{
+    grid-area: 1 / 26 / -1 / 30;
+}
+.sol-bemol1{
+    z-index: 1;
+    grid-area: 1/29/1/31;
+}
+.sol1{
+    grid-area: 1/30/-1/34;
+}
+.la-bemol1{
+    z-index: 1;
+    grid-area: 1/33/1/35;
+}
+.la1{
+    grid-area: 1/34/-1/38;
+}
+.si-bemol1{
+    z-index: 1;
+    grid-area: 1/37/1/39;
+}
+.si1{
+    grid-area: 1/38/-1/42;
+}
+.do2{
+    grid-area: 1/42/-1/46;
+}
+.re-bemol2{
+    z-index: 1;
+    grid-area: 1/45/1/47;
+}
+.re2{
+    grid-area: 1/46/-1/50;
+}
+.mi-bemol2{
+    grid-area: 1/49/1/51;
+    z-index: 1;
+}
+.mi2{
+    grid-area: 1/50/-1/54;
+}
+.fa2{
+    grid-area: 1/54/-1/58;
+}
+.sol-bemol2{
+    z-index: 1;
+    grid-area: 1/57/1/59;
+}
+.sol2{
+    grid-area: 1/58/-1/62;
+}
+.la-bemol2{
+    z-index: 1;
+    grid-area: 1/61/1/63;
+}
+.la2{
+    grid-area: 1/62/-1/66;
+}
+.si-bemol2{
+    z-index: 1;
+    grid-area: 1/65/1/67;
+}
+.si2{
+    grid-area: 1/66/-1/70;
+}
+.do3{
+    grid-area: 1/70/-1/74;
+}
