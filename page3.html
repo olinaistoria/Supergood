@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(209, 184, 153);
+        }
+        .conteiner{
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .btn-1{
+            background-color: rgb(101, 41, 41);
+            color: rgb(255, 202, 202);
+            border-radius: 10px;
+            border-color: brown;
+            border-width: 10px;
+            border-style: ridge;
+            font-size: x-large;
+            font-family: 'Pangolin', cursive;
+            transition: 0.3s;
+        }
+        .btn-1:active{
+            background-color: brown;
+            color: azure;
+        }
+        .btn-2{
+            background-color: rgb(101, 41, 41);
+            color: rgb(255, 202, 202);
+            border-radius: 10px;
+            border-color: brown;
+            border-width: 10px;
+            border-style: ridge;
+            font-size: x-large;
+            font-family: 'Pangolin', cursive;
+            transition: 0.3s;
+        }
+        .btn-2:active{
+            background-color: brown;
+            color: azure;
+        }
+        .btn-3{
+            background-color: rgb(101, 41, 41);
+            color: rgb(255, 202, 202);
+            border-radius: 10px;
+            border-color: brown;
+            border-width: 10px;
+            border-style: ridge;
+            font-size: x-large;
+            font-family: 'Pangolin', cursive;
+            transition: 0.3s;
+        }
+        .btn-3:active{
+            background-color: brown;
+            color: azure;
+        }
+        .btn-4{
+            background-color: rgb(101, 41, 41);
+            color: rgb(255, 202, 202);
+            border-radius: 10px;
+            border-color: brown;
+            border-width: 10px;
+            border-style: ridge;
+            font-size: x-large;
+            font-family: 'Pangolin', cursive;
+            transition: 0.3s;
+        }
+        .btn-4:active{
+            background-color: brown;
+            color: azure;
+        }
+        .btn-5{
+            background-color: rgb(101, 41, 41);
+            color: rgb(255, 202, 202);
+            border-radius: 10px;
+            border-color: brown;
+            border-width: 10px;
+            border-style: ridge;
+            font-size: x-large;
+            font-family: 'Pangolin', cursive;
+            transition: 0.3s;
+        }
+        .btn-5:active{
+            background-color: brown;
+            color: azure;
+        }
+        .anser{
+            display: flex;
+            justify-content: space-evenly;
+            width: 50px;
+            height: 50px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <button class="btn-1"
+        onclick="
+        console.log(`Book quantity: ${bookQuantity}`)">
+            сколько книг я прочитала?
+        </button>
+        <button class="btn-2"
+        onclick="
+        bookQuantity++;
+        console.log(`Book quantity: ${bookQuantity}`)">
+            прочитать книгу
+        </button>
+        <button class="btn-3"
+        onclick="
+        bookQuantity +=2;
+        console.log(`Book quantity: ${bookQuantity}`)">
+            ещё 2
+        </button>
+        <button class="btn-4"
+        onclick="
+        bookQuantity += 3;
+        console.log(`Book quantity: ${bookQuantity}`)">
+            ещё 3
+        </button>
+        <button class="btn-5" 
+        onclick="
+        bookQuantity = 0;
+        console.log('Head empty');
+        console.log(`Book quantity: ${bookQuantity}`)">
+            забыть всё
+        </button>
+    </div>
+    <div class="anser">
+
+    </div>
+    <script>
+        let bookQuantity = 0;
+    </script>
+</body>
+</html>
