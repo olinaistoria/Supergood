@@ -18,9 +18,10 @@
             font-size: xxx-large;
         }
         .conteiner{
-            display: grid;
+            display: flex;
             justify-content: center;
-            padding-top: 100px;
+            z-index: 2;
+
         }
         .clock{
             width: 350px;
@@ -28,66 +29,62 @@
             border-radius: 15px;
             border: solid 10px rgb(76, 72, 65);
             background-color: rgb(145, 154, 162);
-            display: flex;
-            justify-content: space-around;
+            display: inline-flex;
+            justify-content: space-evenly;
         }
         .window{
-            margin-top: 25px;
-            margin-right: 25px;
-            width: 270px;
+            display: flex;
+            width: 300px;
             height: 100px;
             background-color: rgb(53, 42, 42);
+            justify-content: center;
+            margin-top: 23px;
+            border: solid 2px rgb(50, 23, 23);
+            border-radius: 2px;
         }
-        .btn-on{
-            width: 25px;
-            height: 30px;
+        .time{
+            color: rgb(4, 255, 46);
+            font-size: 85px;
+            visibility: hidden;
+        }
+        .btn{
+            display: inline-block;
+            margin-top: 50px;
+            width: 30px;
+            height: 50px;
+            background-color: rgb(90, 31, 31);
+            position: relative;
+            left: 120px;
+            border: solid 2px rgb(43, 29, 19);
+            border-radius: 5px;
+        }
+        .btn:active{
+            height: 20px;
+            margin-top: 80px;
             background-color: brown;
-            border-radius: 8px;
-            margin-left: 285px;
-            margin-top: 5px;
         }
-        .btn-on:hover{
-            background-color: rgb(123, 33, 33);
-            cursor: grab;
-        }
-        .btn-on:active{
-            border: solid 3px rgb(55, 27, 27);
-            background-color: rgb(177, 21, 21);
-            width: 20px;
-            height: 25px;
-            cursor: grab;
-        }
-        .btn-off{
-            width: 25px;
-            height: 30px;
-            background-color: rgb(52, 42, 87);
-            border-radius: 8px;
-            margin-left: 285px;
-            margin-top: 25px;
-        }
-        .btn-off:hover{
-            background-color: rgb(39, 25, 67);
-            cursor: grab;
-        }
-        .btn-off:active{
-            border: solid 3px rgb(32, 13, 13);
-            background-color: rgb(34, 14, 164);
-            width: 20px;
-            height: 25px;
-            cursor: grab;
+        .display{
+            display: flex;
+            justify-content: center;
         }
     </style>
     </body>
 </head>
 <body>
     <h>What Time is it?</h>
+    <div class="display">
+        <div class="btn"></div>
+    </div>
+    
     <div class="conteiner">
         <div class="clock">
             <div class="window">
-                <div class="btn-on"></div>
-                <div class="btn-off"></div>
+                <div class="time">
+                    22:00
+                </div>
             </div>
         </div>
+        
         <div class="hour"></div>
         <div class="minute"></div>
     </div>
